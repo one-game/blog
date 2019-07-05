@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: keynote
 title: "Tensorflow Estimator 简介"
 subtitle: 'Using a high level tool of tensorflow'
 author: "OneGame"
