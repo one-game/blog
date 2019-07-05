@@ -1,5 +1,5 @@
 ---
-layout: keynote
+layout: md_post
 title: "Tensorflow Estimator 简介"
 subtitle: 'Using a high level tool of tensorflow'
 author: "OneGame"
@@ -37,7 +37,7 @@ estimator.save(..) #保存、导出
 estimator.load(..) #加载
 ```
 所以接下来我们分别看一下每一步中都需要我们准备什么。  
-*** 
+ 
 **实例化Estimator**
 ```python
 #tf.estimator.Estimator的构造函数
