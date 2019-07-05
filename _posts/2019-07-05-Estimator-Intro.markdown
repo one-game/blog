@@ -16,14 +16,14 @@ tags:
 
 ---
 
-## 简介
+# 简介
 tf.estimator属于tensorflow中的高级抽象封装，目的是为了提供开发着的开发速度，但是同时也会在一定程度上限制灵活性。  
 ![tensorflow编程栈](https://upload-images.jianshu.io/upload_images/9550643-43922525245f9a27.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
 
 Estimator封装了训练、评估、预测及导出等操作
-##如何定义一个Estimator
+## 如何定义一个Estimator
 Tensorflow为我们预定义好了一些Estimator（如下图），我们也可根据自己的网络结构去自定义Estimator。
 ![estimator_types.png](https://upload-images.jianshu.io/upload_images/9550643-3934e79e4eec2bb1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
