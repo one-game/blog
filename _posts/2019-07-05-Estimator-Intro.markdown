@@ -5,10 +5,8 @@ subtitle: 'Using a high level tool of tensorflow'
 author: "OneGame"
 header-style: text
 categories:
-  - 工具
-tags:
-  - tensorflow
-  - Estimator
+  - tools
+tags:[tensorflow,Estimator]
 ---
 
 >tf.estimator属于tensorflow中的高级抽象封装，目的是为了提供开发着的开发速度，但是同时也会在一定程度上限制灵活性。  
@@ -28,7 +26,7 @@ Tensorflow为我们预定义好了一些Estimator（如下图），我们也可�
 ![estimator_types.png](https://upload-images.jianshu.io/upload_images/9550643-3934e79e4eec2bb1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 通常来说我们去实例化一个Estimator并且进行训练只需要两步：
-```
+```python
 estimator = tf.estimator.Estimator(..) #实例化
 esitmator.train(..) #训练
 estimator.evaluate(..) #评估
@@ -62,7 +60,7 @@ def my_model_fn(
 **mode**是指定模型的运行模型，如训练、评估和预测  
 **params**是其他参数用于模型的构建和超参的调优
 **注：** 该函数必须返回一个[`tf.estimator.EstimatorSpec`](https://www.tensorflow.org/api_docs/python/tf/estimator/EstimatorSpec)的实例
-  ```
+  ```python
   @staticmethod
 __new__(
     cls,
@@ -87,7 +85,7 @@ __new__(
 ***
 **训练模型**
 接下来我们看一下estimitor的训练都需要什么，函数的原型定义如果下：
-```
+```python
 train(
     input_fn,
     hooks=None,
@@ -97,7 +95,7 @@ train(
 )
 ```
 * input_fn: 数据封装及转换函数，用来将原始数据封装成tf.data.Dataset输出提供给train（或者eval和predict使用），并且提供数据迭代和permutation等功能。其定义如下：
-```
+```python
 def train_input_fn(features, labels, batch_size):
     """An input function for training"""
     # Convert the inputs to a Dataset.
