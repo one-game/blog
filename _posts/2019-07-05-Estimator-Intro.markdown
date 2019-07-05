@@ -6,7 +6,9 @@ author: "OneGame"
 header-style: text
 categories:
   - tools
-tags:[tensorflow,Estimator]
+tags:
+  - tensorflow
+  - Estimator
 ---
 
 >tf.estimator属于tensorflow中的高级抽象封装，目的是为了提供开发着的开发速度，但是同时也会在一定程度上限制灵活性。  
